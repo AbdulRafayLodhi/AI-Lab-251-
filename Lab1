@@ -1,1 +1,10 @@
-print("Hello World")
+user_input = input("Enter a number: ")
+
+try:
+    number = float(user_input)
+    result = ((number + 3) * 2) - 4 + 3 
+
+    print("The result is:", result)
+except ValueError:
+    print("Invalid input. Please enter a valid number.")
+
